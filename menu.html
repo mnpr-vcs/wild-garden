@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wild Garden</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <header class="header-container">
+                <!-- Navigation menu -->
+                <nav class="nav-menu">
+                    <a href="home.html" class="nav-title">
+                        <img class="nav-logo" src="assets/wild_garden_logo.png">
+                    </a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="menu.html">Menu</a>
+                    <span id="theme-toggle" class="fa-sharp fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></span>
+                </nav>
+            </header>
+        <main>
+            <div class="menu-items">
+            <section>
+                <h3>We Serve ... </h3>
+            </section>
+            <section>
+                   <h4>Breakfast, Tea, Coffee</h4>
+                    <table>
+                        <tr>
+                            <td><b>Item</b></td>
+                            <td>Ingredients</td>
+                            <td>Price(Rs.)</td>
+                        </tr>
+                        <tr>
+                            <td>Black Tea</td>
+                            <td>Water, Tea Leaves (Plain/Masala/Lime)</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Milk Tea</td>
+                            <td>Water, Tea Leaves, Regional Buffalo Milk (Plain/Masala)</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Black Coffee</td>
+                            <td>Water, Regional Coffee Beans</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>Milk Coffee</td>
+                            <td>Water, Regional Coffee Beans, Regional Buffalo Milk</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Sandwich</td>
+                            <td>Eggs from Farm, Regional Lattuce, Bread, and Butter</td>
+                            <td>150</td>
+                        </tr>
+                    </table>
+            </section>
+            <section>
+                <h4>Khana Set Variants</h4>
+                <table>
+                    <tr>
+                        <td>Veg. Khana Set</td>
+                        <td>Rice, Lentils, Vegetables, Aachar with Seasonal Spices</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Fazant Khana Set</td>
+                        <td>Rice, Lentils, Vegetables, Fazants( Kalij, Chicken, Ducks, ... ), Aachar with Seasonal Spices</td>
+                        <td>-</td>
+                    </tr>
+               </table>
+            </section>
+            <section>
+                <h4>Khaja Set Variants</h4>
+                <table>
+                    <tr>
+                        <td>Veg. Khaja Set</td>
+                        <td>Rice Flakes, Vegetables, Aachar with Seasonal Nuts and Spices</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Fazant Khaja Set</td>
+                        <td>Rice Flakes, Vegetables, Fazants( Kalij, Chicken, Ducks, ... ), Aachar with easonal Nuts and Spices</td>
+                        <td>-</td>
+                    </tr>
+               </table>
+            </section>
+            <section>
+                <h4>Drinks and Beaverages</h4>
+                <table>
+                    <tr>
+                        <td>Fruits Juice</td>
+                        <td>Seasonal Fruits</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Lassi</td>
+                        <td>Seasonal Fruits, Regional Yogurt, Sweets and Spices</td>
+                        <td>-</td>
+                    </tr>
+               </table>
+            </section>
+            </div>
+        </main>
+        <footer class="footer-container">
+            <div class="footer-contact">
+                <span><i>reach us: </i>
+                    <a href="https://www.facebook.com/wildgarden">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/wildgarden">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Wild Garden.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const toggleModeButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        if (localStorage.getItem('darkMode') === 'true') {
+            body.classList.add('dark-mode');
+        }
+
+        toggleModeButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,103 @@
+/* * {
+  border: 2px solid #333;
+} */
+
+body {
+  background-color: #f0f0f0; /* light mode */
+}
+
+.dark-mode {
+  background-color: #333; /* dark mode */
+  color: #fff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.welcome {
+  display: grid;
+  justify-content: center;
+}
+
+.about-us section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-items section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-container {
+  padding: 1em;
+}
+
+.footer-contact, .footer-copyright p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#theme-toggle {
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.contact-info {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info li {
+  font: 1em;
+
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    font-size: 12px;
+  }
+  .contact-info i {
+    font-size: 14px;
+  }
+  .menu-items section {
+    font-size: 14px;
+  }
+}
