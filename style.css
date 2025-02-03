@@ -3,6 +3,10 @@
 } */
 
 body {
+    font-size: calc(16px + 0.5vw);
+}
+
+body {
   background-color: #f0f0f0; /* light mode */
 }
 
@@ -14,6 +18,11 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
+}
+
+.header-container, .footer-container {
+  padding: 1em;
+  border: 1px solid aliceblue;
 }
 
 .nav-title {
@@ -40,7 +49,30 @@ body {
   justify-content: center;
 }
 
+.welcome h1, .welcome p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-img {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 .about-us section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+}
+
+.about-img-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 1em;
 }
 
 .footer-container {
@@ -88,16 +121,4 @@ a {
 .contact-info li {
   font: 1em;
 
-}
-
-@media (max-width: 768px) {
-  .contact-info {
-    font-size: 12px;
-  }
-  .contact-info i {
-    font-size: 14px;
-  }
-  .menu-items section {
-    font-size: 14px;
-  }
 }
